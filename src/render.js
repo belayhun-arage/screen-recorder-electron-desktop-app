@@ -7,8 +7,8 @@ const vidioSelectBtn = document.getElementById('vidioSelectBtn');
 vidioSelectBtn.onclick=getVidioSources;
 
 // import the nodejs module in the browser
-const { desktopCapturer, remote, dialog } = require("electron")
-const { Menu } = remote;
+const remote = require('@electron/remote');
+const {desktopCapturer,Menu, dialog } = remote;
 
 async function getVidioSources(){
     const inputSources = await desktopCapturer.getSources({

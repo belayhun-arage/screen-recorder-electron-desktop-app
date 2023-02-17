@@ -18,7 +18,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@electron/remote": "^2.0.9",
+    "electron-squirrel-startup": "^1.0.0",
+    "rpm-builder": "^1.2.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.5",
